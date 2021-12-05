@@ -498,7 +498,20 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="mail_handler.php" method="post" name="form" class="form-box">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+            <label for="email">Email ID</label><br>
+            <input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+            <label for="phone">Phone</label><br>
+            <input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required><br>
+            <label for="message">Message</label><br>
+            <textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
+            <input type="submit" name="submit" value="Send" class="sub-btn">
+          </form>
+      
+          <!--
+          <form action="mail-handler.php" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -519,6 +532,8 @@
             </div>
             <div class="text-center"><button type="submit">Send Message</button></div>
           </form>
+        -->
+
         </div>
 
       </div>
